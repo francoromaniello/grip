@@ -8,6 +8,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 enable_language(Rust)
 include(CMakeCargo)
+include(CMakeParseArguments)
 
 set(THIRD_PARTY "${CMAKE_SOURCE_DIR}/third_party")
 set(SRC_DIR "${CMAKE_SOURCE_DIR}/cpp")
