@@ -11,7 +11,7 @@ env:
   matrix:
     - RUN_DEBUG_TEST=1 RUN_DEBUG_BUILD=1
     - RUN_RELEASE_TEST=1 RUN_CLIPPY=1
-    - RUN_RELEASE_BUILD=1
+    - RUN_RELEASE_BUILD=1 RUN_CLIPPY=1
 os:
 - linux
 matrix:
