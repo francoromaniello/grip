@@ -107,6 +107,7 @@ deploy:
   skip_cleanup: true
   on:
     repo: francoromaniello/grip
+    branch: master
 # NOTE make sure you only release *once* per target
     condition: $DO_DEPLOY = 1
     tags: true
