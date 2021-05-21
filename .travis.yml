@@ -79,8 +79,8 @@ script:
   - |
       if [ -n "$RUN_RELEASE_BUILD" ]; then
         cd $TRAVIS_BUILD_DIR/build/release
-        cmake $TRAVIS_BUILD_DIR -DCMAKE_BUILD_TYPE=Release -DBOOST_USE_STATIC=OFF -v
-        make -j1
+        cmake $TRAVIS_BUILD_DIR -DCMAKE_BUILD_TYPE=Release -DBOOST_USE_STATIC=OFF
+        make -j1 -v
       fi
 
   - |
