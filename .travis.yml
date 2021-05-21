@@ -73,7 +73,7 @@ script:
       if [ -n "$RUN_DEBUG_BUILD" ]; then
         cd $TRAVIS_BUILD_DIR/build/debug
         cmake $TRAVIS_BUILD_DIR -DCMAKE_BUILD_TYPE=Debug
-        make -j1
+        make -j1 -v
       fi
 
   - |
