@@ -99,6 +99,7 @@ before_deploy:
 - cp $TRAVIS_BUILD_DIR/scripting/* $TRAVIS_BUILD_DIR/deploy/addons/amxmodx/scripting/include
 - cd $TRAVIS_BUILD_DIR/deploy
 - tar czf grip-${TRAVIS_TAG}-${TARGET}.tar.gz addons
+- travis setup releases
 deploy:
   provider: releases
   api_key:
@@ -108,7 +109,6 @@ deploy:
   on:
     repo: francoromaniello/grip
     branch: master
-# NOTE make sure you only release *once* per target
     condition: $DO_DEPLOY = 1
     tags: true
 cache:
